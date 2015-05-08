@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <link rel="stylesheet" href="/css/public_analytics.css">
+  <link rel="stylesheet" href="/css/public_analytics.css.map">
+  <script src="/data.json"></script>
+  <script src="js/chart.js"></script>
+  </head>
+  <!--<body>
+    <h1>Total Number of Datasets</h1>
+    <p id="number"><p>
+
+      <h1>Chart</h1>
+      <canvas id="myChart" width="400" height="400"></canvas>
+
+      <script src="/js/jquery.js"></script>
+      <script src="/js/my.js"></script>
+  </body>
+</html>-->
+
+<body>
+
+    <header id="usa_dot_gov_header">
+      <div class="header_container">
+        <h1>Machine Ready Datasets</h1>
+        <a id="about" href="#explanation">About this site</a>
+      </div>
+      <div id="color_bar"></div>
+    </header>
+
+    <div class="container">
+      <!--
+      JavaScript block hooks look for any element with both data-block and
+      data-source attributes:
+
+      <section data-block="users" data-source="path/to/data.json">
+        The "loading", "loaded", and "error" classes are set on this element
+        the data-source URL is loaded. Then the renderer is called on the first
+        child of the block with the "data" class:
+
+        <div class="data">
+        </div>
+
+        Some renderers expect to be called on HTML tables, in which
+        case you would use:
+
+        <table class="data">
+        </table>
+
+      </section>
+      -->
+
+      <div id="main_data">
+        <section id="realtime"
+          data-block="realtime"
+          data-source="https://analytics.usa.gov/data/live/realtime.json"
+          data-refresh="15">
+          <h2 id="number" class="data">...</h2>
+          <div class="chart_subtitle">machine readable datasets</div>
+        </section>
+
+
+      </div>
+
+      <div id="secondary_data">
+        <section id="top_100_table">
+
+          <!-- see: http://heydonworks.com/practical_aria_examples/ -->
+          <h3>Data Type Distribution</h3>
+          <canvas id="myChart" width="300" height="300"></canvas>
+
+
+        </section>
+      </div>
+
+      <section id="explanation">
+        <h3>About this Site</h3>
+        <p>Data is everywhere and it doesn't always come in the best format. We are trying to make data work for us -- for that to happen, it needs to be clean, right, and readable.
+      </section>
+
+      <section id="data_download">
+        <h3>Download the Data</h3>
+        <p><a href="#">Links to relevant data<a></p>
+
+      </section>
+
+    </div>
+
+    <script src="/js/jquery.js"></script>
+    <script src="/js/my.js"></script>
+  </body>
