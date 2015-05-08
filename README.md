@@ -22,6 +22,12 @@ accessibility principle is critical to enabling data hungry algorithms to crunch
 complex data sets into meaningful value.
 
 Our application, Machine Ready, leverages existing data.json content to determine 
-how the datasets match up to the accessibility principles laid out by the open 
+how an agency's datasets match up to the accessibility principles laid out by the open 
 data initiative. The objective is to help agencies visualize which datasets could
 benefit from a translation to more machine friendly formats.
+
+We are hoping that visualizing this data will help inspire agencies to improve 
+the way they create and maintian their datasets. To facilitate this improvement
+the site provides helpful information on how to translate machine unfriendly
+formats, like Microsoft Word, into friendly formats like JSON.
+
