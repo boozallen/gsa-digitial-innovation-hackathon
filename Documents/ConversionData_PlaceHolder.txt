@@ -3,11 +3,11 @@ The preferred type of file for use is the popular ".json" file (Read up on the f
 Json Schema:
 The JSON schema is how the data is set up within the JSON document. It also sets up whether the data is required or optional to include within the document. 
 
-
 Adobe PDF Filetype:
 To txt:
 Open file, "save as other", and select "Text".
-
+Then paste the .txt into converter site: http://www.convertcsv.com/csv-to-json.htm
+Set up the schema and download it.
 
 Zip Filetype:
 Unzip the file(s) and convert the uncompressed file into a appropriate format.
@@ -20,11 +20,15 @@ To convert a mdb or Access database file to JSON, use one of these two tutorials
 
 Word FileType:
 Steps to convert a Word document to Json file.
-
+Then paste the .txt into converter site: http://www.convertcsv.com/csv-to-json.htm
+Set up the schema and download it.
 
 Excel FileType
 First Convert the file into a .csv file.
 Then paste the .csv into converter site: http://www.convertcsv.com/csv-to-json.htm
 Set up the schema and download it.
 
-OpenOffice Spreasheet Type:
+A Secondary site to try is: http://shancarter.github.io/mr-data-converter/
+
+Helpful Ideas:
+The JSON file format is needed to ensure that data analytics can happen properly. A ton of files cannot be natively converted to JSON and could require a custom tool. Thankfully a list of languages that have supporting JSON libraries is available on the JSON website and can be found by scrolling below the tutorial graphics on the main site. There are many libraries created to convert a single file to a JSON object. 
