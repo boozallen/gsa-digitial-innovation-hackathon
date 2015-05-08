@@ -1,4 +1,27 @@
-var totalCount = 0;
+
+
+
+var validateDataset = function() {
+  var url = document.getElementById("validateURL").value;
+  console.log(url);
+
+
+  //call function to validate the dataset
+
+}
+
+
+
+
+
+document.getElementById("number").innerHTML = JSON.stringify(data.dataset);
+var count = data.dataset.length;
+
+/*for (var i = 0;i < data.dataset.length; i++) {
+  var distribution = data[i].dataset.distribution;
+  console.log(distribution);
+}*/
+
 var wordCount = 0;
 var excelCount = 0;
 var accessCount = 0;
@@ -9,8 +32,6 @@ var excelArray = [];
 var accessArray = [];
 var pdfArray = [];
 var zipArray = [];
-
-document.getElementById("contactInfo").innerHTML = "If you need help with your data, it wouldn't hurt to ask. Please contact <a href='mailto:myehsha.boone@gsa.gov' target='_blank'>Myehsha Kehoga Boone</a> for more information";
 
 var fun = function() {
 
@@ -23,48 +44,48 @@ var fun = function() {
         console.log(type);
 
         if (type == "application/msword") {
-          totalCount= totalCount + 1;
           wordCount = wordCount + 1;
           wordArray.push(
             {
               title: data.dataset[k].title,
-              contactName: "<a href='" + data.dataset[k].contactPoint.hasEmail + "' target='_blank'>" + data.dataset[k].contactPoint.fn + "</a>"
+              contactName: data.dataset[k].contactPoint.fn,
+              contactEmail: data.dataset[k].contactPoint.hasEmail
             }
           );
         }
         if (type == "application/vnd.ms-excel") {
-          totalCount= totalCount + 1;
           excelCount = excelCount + 1;
           excelArray.push(
             {
               title: data.dataset[k].title,
-              contactName: "<a href='" + data.dataset[k].contactPoint.hasEmail + "' target='_blank'>" + data.dataset[k].contactPoint.fn + "</a>"
+              contactName: data.dataset[k].contactPoint.fn,
+              contactEmail: data.dataset[k].contactPoint.hasEmail
             }
           )
         }
         if (type == "application/mdb") {
-          totalCount= totalCount + 1;
           accessCount = accessCount + 1;
           accessArray.push({
             title: data.dataset[k].title,
-            contactName: "<a href='" + data.dataset[k].contactPoint.hasEmail + "' target='_blank'>" + data.dataset[k].contactPoint.fn + "</a>"
+            contactName: data.dataset[k].contactPoint.fn,
+            contactEmail: data.dataset[k].contactPoint.hasEmail
           }
           )
         }
         if (type == "application/pdf") {
-          totalCount= totalCount + 1;
           pdfCount = pdfCount + 1;
           pdfArray.push({
             title: data.dataset[k].title,
-            contactName: "<a href='" + data.dataset[k].contactPoint.hasEmail + "' target='_blank'>" + data.dataset[k].contactPoint.fn + "</a>"
+            contactName: data.dataset[k].contactPoint.fn,
+            contactEmail: data.dataset[k].contactPoint.hasEmail
           })
         }
         if (type == "application/zip") {
-          totalCount= totalCount + 1;
           zipCount = zipCount + 1;
           zipArray.push({
             title: data.dataset[k].title,
-            contactName: "<a href='" + data.dataset[k].contactPoint.hasEmail + "' target='_blank'>" + data.dataset[k].contactPoint.fn + "</a>"
+            contactName: data.dataset[k].contactPoint.fn,
+            contactEmail: data.dataset[k].contactPoint.hasEmail
           })
         }
         console.log(wordCount);
@@ -85,7 +106,7 @@ fun();
 
 
 
-document.getElementById("number").innerHTML = totalCount;
+document.getElementById("number").innerHTML = count;
 
 
 
@@ -133,9 +154,7 @@ var myNewChart = new Chart(ctx).Pie(pieData, pieOptions);
 console.log(wordArray);
 $("#myChart").click(
     function(evt){
-      document.getElementById("contactInfo").innerHTML = "<p>If you're feeling helpful, you can convert this information into a format I can better follow. Please contact <span id='contactName'></span> for more information.</p>"
       document.getElementById("badData").style.visibility = "visible";
-      document.getElementById("computer").src = "SadComputer3D.png";
         var activePoints = myNewChart.getSegmentsAtEvent(evt);
         var label = activePoints[0].label;
         console.log(label);
@@ -143,27 +162,27 @@ $("#myChart").click(
           console.log(wordArray[0].title);
           document.getElementById("dataTitle").innerHTML = wordArray[0].title;
           document.getElementById("contactName").innerHTML = wordArray[0].contactName;
-          document.getElementById("sadText").innerHTML = "Booo, I can't read Microsoft Word. Its proprietary and I don't understand how to get find the information I'm interested in.";
+          document.getElementById("contactEmail").innerHTML = wordArray[0].contactEmail;
         }
         if(label == "Excel") {
           document.getElementById("dataTitle").innerHTML = excelArray[0].title;
           document.getElementById("contactName").innerHTML = excelArray[0].contactName;
-          document.getElementById("sadText").innerHTML = "Darn, this data is in Excell. Its proprietary and doesn't play well with the way I'm used to finding information.";
+          document.getElementById("contactEmail").innerHTML = excelArray[0].contactEmail;
         }
         if(label == "ZIP") {
           document.getElementById("dataTitle").innerHTML = zipArray[0].title;
           document.getElementById("contactName").innerHTML = zipArray[0].contactName;
-          document.getElementById("sadText").innerHTML = "Zip who??? This data gift is still wrapped, I need to do some work before I even know if I can use this or not.";
+          document.getElementById("contactEmail").innerHTML = zipArray[0].contactEmail;
         }
         if(label == "Access") {
           document.getElementById("dataTitle").innerHTML = accessArray[0].title;
           document.getElementById("contactName").innerHTML = accessArray[0].contactName;
-          document.getElementById("sadText").innerHTML = "Yikes, looks like the good stuff is locked away. If I want to read this I need to go out and find the right tools.";
+          document.getElementById("contactEmail").innerHTML = accessArray[0].contactEmail;
         }
         if(label == "PDF") {
           document.getElementById("dataTitle").innerHTML = pdfArray[0].title;
           document.getElementById("contactName").innerHTML = pdfArray[0].contactName;
-          document.getElementById("sadText").innerHTML = "OH NO, I can't read PDF. Its proprietary and I don't understand how to get find the information I'm interested in.";
+          document.getElementById("contactEmail").innerHTML = pdfArray[0].contactEmail;
         }
     }
 );
