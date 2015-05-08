@@ -1,0 +1,16 @@
+/* TEAM */
+	Developer: Martin Folkoff
+	Contact: folkoff_martin [at] bah.com
+	From: Herndon, VA, USA
+
+	Developer: Jake Prest
+	Contact: prest_jake [at] bah.com
+	From: Herndon, VA, USA
+
+	Developer: Michael Nachmias
+	Contact: nachmias_michael [at] bah.com
+	From: Herndon, VA, USA
+	
+	Developer: Erich Perrault
+	Contact: Perrault_Erich [at] bah.com
+	From: Herndon, VA, USA
