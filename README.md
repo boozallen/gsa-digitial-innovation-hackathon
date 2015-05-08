@@ -18,10 +18,10 @@ easier viewing of additional metadata."
 
 One [principle](https://project-open-data.cio.gov/principles/) of the open 
 source initiative is to help create machine readable data sets. This 
-accessibility principle is critical to enabling data hungry algorithms crunch 
+accessibility principle is critical to enabling data hungry algorithms to crunch 
 complex data sets into meaningful value.
 
 Our application, Machine Ready, leverages existing data.json content to determine 
 how the datasets match up to the accessibility principles laid out by the open 
 data initiative. The objective is to help agencies visualize which datasets could
-use benefit from translation to more machine friendly data types.
+benefit from a translation to more machine friendly formats.
