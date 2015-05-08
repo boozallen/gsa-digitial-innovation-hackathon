@@ -35,6 +35,13 @@ formats, like Microsoft Word, into friendly formats like JSON.
 
 Style and UI theme borrowed from https://github.com/GSA/analytics.usa.gov
 
+## Contributions
+
+All help is welcome. 
+
+This project is as simple as it gets, nothing but jquery, html, and css.
+Host it with your favorite web server.
+
 ## Roadmap
 
 - more in depth visualizations of bad mediaTypes
