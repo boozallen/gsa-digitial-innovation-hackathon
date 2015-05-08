@@ -31,3 +31,23 @@ the way they create and maintian their datasets. To facilitate this improvement
 the site provides helpful information on how to translate machine unfriendly
 formats, like Microsoft Word, into friendly formats like JSON.
 
+## Disclaimers
+
+Style and UI theme borrowed from https://github.com/GSA/analytics.usa.gov
+
+## Contributions
+
+All help is welcome. 
+
+This project is as simple as it gets, nothing but jquery, html, and css.
+Host it with your favorite web server.
+
+## Roadmap
+
+- more in depth visualizations of bad mediaTypes
+ - % of good mediaTypes by theme or keyword
+ - % of good mediaTypes by maintainer
+- capability to build page through entering a url to any data.json file
+- documentation or links to resources for translating bad formats
+- directly tie into the [automatic metrics](http://labs.data.gov/dashboard/docs#automated_metrics) collected by labs.data.gov to help
+enforce milestones around more accessible data services.
