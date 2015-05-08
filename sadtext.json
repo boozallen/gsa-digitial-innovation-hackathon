@@ -1,0 +1,16 @@
+{
+	"MediaType Response":[
+	{
+		"type": "Microsoft Word",
+		"sadText": "Booo, I can't read Microsoft Word. Its properiatary and I don't understand how to get find the information I'm interested in.",
+		"contactText": "If your feeling helpful, you can convert this information into a schema I better follow. Check out this link to learn more",
+		"learMoreURL": "http://google.com"
+	},
+	{
+		"type": "PDF",
+		"sadText": "OH NO, I can't read PDF. Its properiatary and I don't understand how to get find the information I'm interested in.",
+		"contactText": "If your feeling helpful, you can convert this information into a schema I better follow. Check out this link to learn more",
+		"learMoreURL": "http://google.com"
+	}
+	]
+}
