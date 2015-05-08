@@ -1,0 +1,34 @@
+{
+	"mediaTypeResponse":[
+	{
+		"type": "Microsoft Word",
+		"sadText": "Booo, I can't read Microsoft Word. Its proprietary and I don't understand how to get find the information I'm interested in.",
+		"contactText": "If your feeling helpful, you can convert this information into a format I can better follow. Check out this link to learn more",
+		"learnMoreURL": "http://google.com"
+	},
+	{
+		"type": "PDF",
+		"sadText": "OH NO, I can't read PDF. Its proprietary and I don't understand how to get find the information I'm interested in.",
+		"contactText": "If your feeling helpful, you can convert this information into a format I can better follow. Check out this link to learn more",
+		"learnMoreURL": "http://google.com"
+	},
+	{
+		"type": "Excel",
+		"sadText": "Darn, this data is in Excell. Its proprietary and doesn't play well with the way I'm used to finding information",
+		"contactText": "Its pretty easy to convert Excel into a more friendly format, check out this site to get started",
+		"learnMoreURL": "http://google.com"
+	},
+	{
+		"type": "Zip",
+		"sadText": "Zip who??? This data gift is still wrapped, I need to do some work before I even know if I can use this or not",
+		"contactText": "With a little bit of more effort this data can be ready for prime time analysis, follow the link to learn more",
+		"learnMoreURL": "http://google.com"
+	},
+	{
+		"type": "MDB",
+		"sadText": "Yikes, looks like the good stuff is locked away. If I want to read this I need to go out and find the right tools",
+		"contactText": "If your feeling helpful, you can convert this information into a format I can better follow. Check out this link to learn more",
+		"learnMoreURL": "http://google.com" 
+	}
+	]
+}
